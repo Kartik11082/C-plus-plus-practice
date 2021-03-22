@@ -10,12 +10,11 @@ int main()
     while(n--)
     {
         cin>>str;
-        long int l = str.length();
-        if(l < 11)
-            cout<<str<<endl;
+        if(str.length() < 11)
+            cout<<str<<"\n";
         else
         {
-            cout<<str[0]<<(l - 2)<<str.back()<<endl;
+            cout<<str[0]<<(str.length() - 2)<<str.back()<<"\n";
         }
     }
     return 0;
